@@ -1,6 +1,6 @@
 <?php
 
-require_once './controller/plantillaController.php';
+require_once './controladores/principalController.php';
 
-$plantilla = new Plantilla();
-$plantilla -> ctrPlantilla();
+$Obj_Principal = new Principal();
+$Obj_Principal -> ctrPlantilla();
