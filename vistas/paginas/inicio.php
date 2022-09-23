@@ -1,4 +1,5 @@
-<section class="content-header">
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
@@ -16,7 +17,6 @@
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
-    </section>
 
     <!-- Main content -->
     <section class="content">
@@ -28,10 +28,7 @@
               <span class="info-box-icon bg-success elevation-1"><a href=""><i class="fas fa-users"></i></a></span>
               <div class="info-box-content">
                 <span class="info-box-text"> Listado Saturno </span>
-                <span class="info-box-number">
-                  10
-                  <small>%</small>
-                </span>
+                <span class="info-box-number">10<small>%</small></span>
               </div>
               <!-- /.info-box-content -->
             </div>
@@ -66,3 +63,4 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+  </div>

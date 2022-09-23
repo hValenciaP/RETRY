@@ -47,7 +47,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link active">
+            <a href="salir" class="nav-link active">
             <i class="fa fa-sign-out" aria-hidden="true"></i>
               <p>
                 Salir
