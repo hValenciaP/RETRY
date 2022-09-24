@@ -17,13 +17,18 @@ session_start();
   <link rel="stylesheet" href="vistas/lib/dist/css/adminlte.min.css">
    <!-- icheck bootstrap -->
   <link rel="stylesheet" href="vistas/lib/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="vistas/lib/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="vistas/lib/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="vistas/lib/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
 </head>
-<body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed sidebar-collapse">
+
 
   <!-- Contenido Dinamico -->
 <?php  
 if(isset($_SESSION['login']) && $_SESSION['login']=='ok'){
       echo ' 
+      <body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed sidebar-collapse">
     <div class="wrapper">
           <div class="preloader flex-column justify-content-center align-items-center">
               <img class="animation__wobble" src="vistas/lib/dist/img/Logo.png" alt="SaturnoLogo" height="60" width="60">
@@ -76,5 +81,52 @@ include 'vistas/modulos/footer.php';
 <script src="vistas/lib/dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="vistas/lib/dist/js/pages/dashboard2.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="vistas/lib/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="vistas/lib/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="vistas/lib/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="vistas/lib/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="vistas/lib/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="vistas/lib/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="vistas/lib/plugins/jszip/jszip.min.js"></script>
+<script src="vistas/lib/plugins/pdfmake/pdfmake.min.js"></script>
+<script src="vistas/lib/plugins/pdfmake/vfs_fonts.js"></script>
+<script src="vistas/lib/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="vistas/lib/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="vistas/lib/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+
+<!-- Page specific script -->
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"],
+      "deferRender": true,
+	    "retrieve": true,
+	    "processing": true,
+	    "language": {
+
+        "sProcessing":     "Procesando...",
+        "sLengthMenu":     "Mostrar _MENU_ registros",
+        "sZeroRecords":    "No se encontraron resultados",
+        "sEmptyTable":     "Ningún dato disponible en esta tabla",
+        "sInfo":           "Mostrando registros del _START_ al _END_",
+        "sInfoEmpty":      "Mostrando registros del 0 al 0",
+        "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+        "sInfoPostFix":    "",
+        "sSearch":         "Buscar:",
+        "sUrl":            "",
+        "sInfoThousands":  ",",
+        "sLoadingRecords": "Cargando...",
+        "oPaginate": {
+          "sFirst":    "Primero",
+          "sLast":     "Último",
+          "sNext":     "Siguiente",
+          "sPrevious": "Anterior"
+		},
+	}
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+  });
+</script>
 </body>
 </html>

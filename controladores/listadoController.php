@@ -1,10 +1,10 @@
 <?php
-class ctrListado{
+class controladorListado{
 
-    static public function ctrgetListado(){
+    static public function getListadoPro(){
 
         $tabla="SAS_LISTADO_PERSONAL_PRO";
-        $respuesta=mdlListado::mdlGetListadoPro($tabla);
+        $respuesta=modeloListado::GetListadoPro($tabla);
         return $respuesta;
         require_once './view/pages/listado.php';
         }
