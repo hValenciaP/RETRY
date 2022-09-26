@@ -6,7 +6,8 @@ class ControladorUsuario{
 
         if(preg_match('/^[A-Z]+$/', $_POST["txt_user"]) && 
             preg_match('/^[a-zA-Z0-9]+$/', $_POST["txt_clave"])) {
-            $idusuario = $_POST['txt_user'];
+
+            $idusuario = strtoupper($_POST['txt_user']);
             $clave = $_POST['txt_clave'];
             
             $stmt = mdlUsuario::mdlBuscarUsuario($idusuario, $clave);

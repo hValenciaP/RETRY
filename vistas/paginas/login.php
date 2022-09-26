@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LISTADO RRHH</title>
+    <!-- Login -->
+    <link rel="stylesheet" href="vistas/lib/dist/css/propio.css">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="vistas/lib/plugins/fontsgoogle/fonts.css">
   <!-- Font Awesome Icons -->
@@ -31,7 +33,8 @@
                 </div>
                 <div class="col-xs-4 input-group mb-3">
                     <label for="" class="form-label"> </label>
-                    <input autofocus placeholder="Usuario" maxlength="20" name="txt_user" type="text" class="form-control" id="txt_user" aria-describedby="emailHelp" >
+                    <input autofocus placeholder="Usuario" maxlength="20" name="txt_user" type="text" class="form-control mayusculas" id="txt_user" 
+                    aria-describedby="emailHelp">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-user"></span>

@@ -25,7 +25,7 @@
         <div class="row">
           <div class="col-12 col-sm-6 col-md-3">
             <div class="info-box">
-              <span class="info-box-icon bg-success elevation-1"><a href=""><i class="fas fa-users"></i></a></span>
+              <span class="info-box-icon bg-success elevation-1"><a href="listado"><i class="fas fa-users"></i></a></span>
               <div class="info-box-content">
                 <span class="info-box-text"> Listado Saturno </span>
                 <span class="info-box-number">10<small>%</small></span>
@@ -37,8 +37,7 @@
           <!-- /.col -->
           <div class="col-12 col-sm-6 col-md-3">
             <div class="info-box mb-3">
-              <span class="info-box-icon bg-danger elevation-1"><a href=""><i class="fas fa-users"></i></a></span>
-
+              <span class="info-box-icon bg-danger elevation-1"><a href="listado2017"><i class="fas fa-users"></i></a></span>
               <div class="info-box-content">
                 <span class="info-box-text">Listado Saturno 2017</span>
                 <span class="info-box-number">2,000</span>

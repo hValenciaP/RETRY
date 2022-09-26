@@ -1,5 +1,6 @@
 <?php
 session_destroy();
+include_once "paginas/index.php";
 echo '<script>
-        window.location = "inicio";
+        window.location = "index";
         </script>';
