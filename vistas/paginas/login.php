@@ -17,7 +17,7 @@
    <!-- icheck bootstrap -->
   <link rel="stylesheet" href="vistas/lib/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
 </head>
-<body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed sidebar-collapse login-page">
+<body class="hold-transition login-page dark-mode">
 <div class="wrapper">
           <div class="preloader flex-column justify-content-center align-items-center">
               <img class="animation__wobble" src="vistas/lib/dist/img/Logo.png" alt="SaturnoLogo" height="60" width="60">
