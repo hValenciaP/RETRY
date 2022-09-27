@@ -3,7 +3,7 @@
 class ControladorUsuario{
     public static function ctrLoginUsuario(){
         if(isset($_POST['txt_user'])){
-
+        
         if(preg_match('/^[A-Z]+$/', $_POST["txt_user"]) && 
             preg_match('/^[a-zA-Z0-9]+$/', $_POST["txt_clave"])) {
 
