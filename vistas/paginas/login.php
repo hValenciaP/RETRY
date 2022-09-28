@@ -26,7 +26,7 @@
     <!-- /.login-logo -->
     <div class="card card-outline card-primary">
         <div class="card-body">
-            <form class="text-center p-5" action="" method="post">
+            <form class="text-center p-5" method="post">
                 <b class="font-weight-bold">BOLT | LOGIN</b>
                 <div class="mb-1 text-center">
                     <img src="vistas/lib/dist/img/Logo.png" alt="" width="55" height="50" class="mt-3">
@@ -61,8 +61,12 @@
                     </div>
 
                     <div class="d-grid gap-2 col-12 mx-auto">
-                        <button style="background-color:#00559C;color: #FFFFFF;" class="btn btn-block my-3 shadow" type="submit" name="" value="">Iniciar sesión</button>
+                        <button style="background-color:#00559C;color: #FFFFFF;" class="btn btn-block my-3 shadow" type="submit" name="" id='login' value="">Iniciar sesión</button>
                     </div>
+                    <?php
+                    $obj_Login = new ControladorUsuario();
+                    $obj_Login -> ctrLoginUsuario();
+    ?>
 
                     <hr>
                     <div class="col-md-12">
@@ -71,10 +75,7 @@
                         </span>
                     </div>
                 </div>
-    <?php
-    $obj_Login = new ControladorUsuario();
-    $obj_Login -> ctrLoginUsuario();
-    ?>
+    
 
             </form>
         </div>
